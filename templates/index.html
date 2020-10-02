@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <table>
+    <form action="sendmail" method="post">
+            <tr>
+                <td>Subject :</td>
+                <td><input type="text" name="subject" placeholder="Enter subject"></td>
+            </tr>
+
+            <tr>
+                <td>Email to :</td>
+                <td><input type="text" name="email" placeholder="Enter mail"></td>
+            </tr>
+       
+            <tr>
+                <td>Body :</td>
+                <td><textarea name="body" ></textarea></td>
+            </tr>
+       
+            <tr>
+                <td colspan="2" style="padding-left:50px;"><input type="submit" value="send"></td>
+            </tr>
+        
+    </form>
+</table>
+</body>
+</html>
