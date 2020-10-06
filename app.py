@@ -7,8 +7,8 @@ app = Flask(__name__)
 #### FLASK MAIL CONFIGURATION ######
 app.config['MAIL_SERVER']= 'smtp.gmail.com'
 app.config['MAIL_PORT']= 465
-app.config['MAIL_USERNAME'] = 'darsh.modi1111@gmail.com'
-app.config['MAIL_PASSWORD'] = 'vnswpyprvlyuwesz'
+app.config['MAIL_USERNAME'] = 'your.email@gmail.com'
+app.config['MAIL_PASSWORD'] = 'your_password_here'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -27,7 +27,7 @@ def sendmail():
         
         msg = Message(
             sub,
-            sender= 'darsh.modi1111@gmail.com',
+            sender= 'your email@ demo.com',
             recipients=[email_to],
             body=Body_data,
         )
